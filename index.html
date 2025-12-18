@@ -73,18 +73,24 @@
             box-sizing: border-box;
         }
 
-        /* FIX PRINCIPAL: Solucionar contenedor event-wrap */
+        /* FIX PRINCIPAL: Eliminar altura fija de 700px del CSS original */
+        #fh5co-event {
+            height: auto !important;
+            min-height: 850px !important;
+        }
+
+        #fh5co-event .display-t,
+        #fh5co-event .display-tc {
+            height: auto !important;
+            min-height: 700px !important;
+            display: block !important;
+        }
+
         #fh5co-event .event-wrap {
             overflow: visible !important;
             min-height: auto !important;
             height: auto !important;
             padding-bottom: 40px !important;
-        }
-
-        #fh5co-event .display-t,
-        #fh5co-event .display-tc {
-            display: block !important;
-            height: auto !important;
         }
 
         #fh5co-event iframe {
@@ -174,6 +180,19 @@
 
         /* Estilos responsivos para móviles */
         @media screen and (max-width: 768px) {
+            /* Fix para eventos en móvil */
+            #fh5co-event {
+                height: auto !important;
+                min-height: auto !important;
+                padding: 50px 0 !important;
+            }
+
+            #fh5co-event .display-t,
+            #fh5co-event .display-tc {
+                height: auto !important;
+                min-height: auto !important;
+            }
+
             /* Modal responsivo */
             .modal-content {
                 padding: 25px 20px;
@@ -671,7 +690,7 @@
     <script src="js/jquery.min.js"></script>
     <!-- clock -->
     <script src="js/clock.js"></script>
-    <!-- jQuery Easing -->
+        <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
