@@ -1143,7 +1143,7 @@
 
                                 <br><br>
 
-                                <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
+                                <a href="#" onclick="abrirModal('ceremonia'); return false;" class="boton boton-principal">
                                     <i class="icon-heart"></i> Confirmar Asistencia
                                 </a>
                             </div>
@@ -1180,7 +1180,7 @@
 
                                 <br><br>
 
-                                <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
+                                <a href="#" onclick="abrirModal('recepcion'); return false;" class="boton boton-principal">
                                     <i class="icon-heart"></i> Confirmar Asistencia
                                 </a>
                             </div>
@@ -1334,9 +1334,11 @@
         <div id="modalAsistencia" class="superposicion-modal">
             <div class="contenido-modal">
                 <button class="cerrar-modal" onclick="cerrarModal()">&times;</button>
-                <h3 class="titulo-modal">¿Eres invitado de...?</h3>
+                <h3 class="titulo-modal" id="tituloModal">Confirmar Asistencia</h3>
+                <p id="subtituloEvento" style="color: #2C5F8D; font-size: 18px; margin-bottom: 15px; font-weight: 600;"></p>
                 <p style="color: #2C5F8D; font-size: 16px; margin-bottom: 10px; font-weight: 500;">Por favor confirma antes del 5 de enero de 2026</p>
-                <p style="color: #666; font-size: 14px; margin-bottom: 25px; font-style: italic;">Para disfrutar plenamente de nuestra celebración, hemos decidido que sea un evento solo para adultos. Agradecemos tu comprensión.</p>
+                <p style="color: #666; font-size: 14px; margin-bottom: 10px; font-style: italic;">Para disfrutar plenamente de nuestra celebración, hemos decidido que sea un evento solo para adultos. Agradecemos tu comprensión.</p>
+                <p style="color: #2C5F8D; font-size: 16px; margin-bottom: 20px; font-weight: 500;">¿Eres invitado de...?</p>
                 <div class="botones-modal">
                     <button class="boton-modal boton-modal-novia" onclick="confirmarNovia()">
                         <i class="icon-heart" style="margin-right: 8px;"></i>La Novia (Masella)
@@ -1395,7 +1397,18 @@
         });
 
         // FUNCIONES DEL MODAL
-        function abrirModal() {
+        var eventoSeleccionado = '';
+
+        function abrirModal(evento) {
+            eventoSeleccionado = evento;
+            var subtitulo = document.getElementById('subtituloEvento');
+
+            if (evento === 'ceremonia') {
+                subtitulo.textContent = 'Ceremonia Religiosa - 24 Enero 2026, 16:00 hrs';
+            } else if (evento === 'recepcion') {
+                subtitulo.textContent = 'Recepción - 24 Enero 2026, 18:00 hrs';
+            }
+
             document.getElementById('modalAsistencia').style.display = 'flex';
         }
 
@@ -1404,12 +1417,24 @@
         }
 
         function confirmarNovia() {
-            window.open('https://wa.me/50247700182?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
+            var mensaje = '';
+            if (eventoSeleccionado === 'ceremonia') {
+                mensaje = 'Sí, con mucho gusto podré acompañarlos a la Ceremonia Religiosa el 24 de enero de 2026 a las 16:00 hrs';
+            } else if (eventoSeleccionado === 'recepcion') {
+                mensaje = 'Sí, con mucho gusto podré acompañarlos a la Recepción el 24 de enero de 2026 a las 18:00 hrs';
+            }
+            window.open('https://wa.me/50247700182?text=' + encodeURIComponent(mensaje), '_blank');
             cerrarModal();
         }
 
         function confirmarNovio() {
-            window.open('https://wa.me/50242154639?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
+            var mensaje = '';
+            if (eventoSeleccionado === 'ceremonia') {
+                mensaje = 'Sí, con mucho gusto podré acompañarlos a la Ceremonia Religiosa el 24 de enero de 2026 a las 16:00 hrs';
+            } else if (eventoSeleccionado === 'recepcion') {
+                mensaje = 'Sí, con mucho gusto podré acompañarlos a la Recepción el 24 de enero de 2026 a las 18:00 hrs';
+            }
+            window.open('https://wa.me/50242154639?text=' + encodeURIComponent(mensaje), '_blank');
             cerrarModal();
         }
 
