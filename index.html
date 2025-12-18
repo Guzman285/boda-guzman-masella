@@ -238,48 +238,12 @@
                 overflow-y: hidden;
                 max-width: 100%;
                 padding: 10px 5px;
+                margin: 20px auto;
             }
 
             .flip-clock-wrapper {
                 display: inline-flex !important;
                 flex-wrap: nowrap !important;
-            }
-
-            .flip-clock-wrapper ul {
-                width: 38px !important;
-                height: 56px !important;
-                margin: 0 2px !important;
-            }
-
-            .flip-clock-wrapper ul li {
-                line-height: 54px !important;
-                font-size: 38px !important;
-            }
-
-            .flip-clock-divider {
-                width: 16px !important;
-                margin: 0 2px !important;
-            }
-
-            .flip-clock-divider .flip-clock-label {
-                right: -42px !important;
-            }
-
-            .flip-clock-divider .flip-clock-dot {
-                width: 6px !important;
-                height: 6px !important;
-            }
-
-            .flip-clock-label {
-                font-size: 8px !important;
-            }
-        }
-
-        /* Móviles pequeños */
-        @media (max-width: 480px) {
-            .flipTimebox {
-                overflow-x: visible;
-                padding: 5px;
             }
 
             .flip-clock-wrapper ul {
@@ -312,22 +276,23 @@
             }
         }
 
-        /* Móviles muy pequeños */
-        @media (max-width: 360px) {
+        /* Móviles pequeños */
+        @media (max-width: 480px) {
             .flipTimebox {
                 overflow-x: visible;
                 padding: 5px;
+                margin: 15px auto;
             }
 
             .flip-clock-wrapper ul {
-                width: 26px !important;
-                height: 40px !important;
+                width: 28px !important;
+                height: 42px !important;
                 margin: 0 1px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 38px !important;
-                font-size: 26px !important;
+                line-height: 40px !important;
+                font-size: 28px !important;
             }
 
             .flip-clock-divider {
@@ -336,7 +301,7 @@
             }
 
             .flip-clock-divider .flip-clock-label {
-                right: -30px !important;
+                right: -32px !important;
             }
 
             .flip-clock-divider .flip-clock-dot {
@@ -346,6 +311,44 @@
 
             .flip-clock-label {
                 font-size: 6px !important;
+            }
+        }
+
+        /* Móviles muy pequeños */
+        @media (max-width: 360px) {
+            .flipTimebox {
+                overflow-x: visible;
+                padding: 5px;
+                margin: 12px auto;
+            }
+
+            .flip-clock-wrapper ul {
+                width: 24px !important;
+                height: 36px !important;
+                margin: 0 0.5px !important;
+            }
+
+            .flip-clock-wrapper ul li {
+                line-height: 34px !important;
+                font-size: 24px !important;
+            }
+
+            .flip-clock-divider {
+                width: 8px !important;
+                margin: 0 0.5px !important;
+            }
+
+            .flip-clock-divider .flip-clock-label {
+                right: -28px !important;
+            }
+
+            .flip-clock-divider .flip-clock-dot {
+                width: 3px !important;
+                height: 3px !important;
+            }
+
+            .flip-clock-label {
+                font-size: 5px !important;
             }
         }
 
