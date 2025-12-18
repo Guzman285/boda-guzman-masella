@@ -228,12 +228,20 @@
 			/* Reloj countdown */
 			.flipTimebox {
 				transform: scale(0.85);
-				transform-origin: center;
+				transform-origin: center center;
+				display: flex !important;
+				justify-content: center !important;
+				align-items: center !important;
+				width: 100% !important;
 			}
 			.flip-clock-wrapper {
-				margin: 0 auto;
-				display: flex;
-				justify-content: center;
+				margin: 0 auto !important;
+				display: flex !important;
+				justify-content: center !important;
+			}
+			.clock {
+				margin: 0 auto !important;
+				text-align: center !important;
 			}
 
 			/* Eventos - mapas */
@@ -273,6 +281,7 @@
 			/* Reloj más pequeño */
 			.flipTimebox {
 				transform: scale(0.7);
+				transform-origin: center center;
 			}
 
 			/* Tarjetas de regalos más compactas */
