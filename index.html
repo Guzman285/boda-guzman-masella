@@ -180,7 +180,7 @@
             font-style: normal;
         }
 
-        /* ==== CONTADOR ==== */
+        /* ==== CONTADOR - FIX PARA MÓVILES ==== */
         .flipTimebox {
             margin: 30px auto;
             text-align: center;
@@ -194,17 +194,20 @@
 
         /* Forzar que el reloj se mantenga en una línea */
         .flip-clock-wrapper {
-            display: inline-block !important;
+            display: inline-flex !important;
+            flex-wrap: nowrap !important;
             width: auto !important;
             white-space: nowrap !important;
+            justify-content: center !important;
         }
 
         .flip-clock-wrapper ul {
             width: 60px !important;
             height: 90px !important;
-            float: left !important;
-            margin: 0 2px !important;
+            float: none !important;
+            margin: 0 3px !important;
             display: inline-block !important;
+            flex-shrink: 0 !important;
         }
 
         .flip-clock-wrapper ul li {
@@ -212,84 +215,128 @@
         }
 
         .flip-clock-divider {
-            float: left !important;
+            float: none !important;
             width: 20px !important;
-            margin: 0 2px !important;
+            margin: 0 3px !important;
             display: inline-block !important;
+            flex-shrink: 0 !important;
         }
 
+        /* Tablets */
         @media (max-width: 768px) {
+            .flipTimebox {
+                overflow-x: auto;
+                overflow-y: hidden;
+                max-width: 100%;
+                padding: 10px 0;
+            }
+
+            .flip-clock-wrapper {
+                display: inline-flex !important;
+                flex-wrap: nowrap !important;
+            }
+
             .flip-clock-wrapper ul {
-                width: 32px;
-                height: 48px;
+                width: 38px !important;
+                height: 56px !important;
+                margin: 0 2px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 46px;
-                font-size: 32px;
+                line-height: 54px !important;
+                font-size: 38px !important;
             }
 
             .flip-clock-divider {
-                width: 14px;
+                width: 16px !important;
+                margin: 0 2px !important;
+            }
+
+            .flip-clock-divider .flip-clock-label {
+                right: -42px !important;
             }
 
             .flip-clock-divider .flip-clock-dot {
-                width: 5px;
-                height: 5px;
+                width: 6px !important;
+                height: 6px !important;
             }
 
             .flip-clock-label {
-                font-size: 8px;
+                font-size: 8px !important;
             }
         }
 
+        /* Móviles pequeños */
         @media (max-width: 480px) {
+            .flipTimebox {
+                overflow-x: auto;
+                padding: 5px 0;
+            }
+
             .flip-clock-wrapper ul {
-                width: 28px;
-                height: 42px;
+                width: 32px !important;
+                height: 48px !important;
+                margin: 0 1.5px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 40px;
-                font-size: 28px;
+                line-height: 46px !important;
+                font-size: 32px !important;
             }
 
             .flip-clock-divider {
-                width: 10px;
+                width: 12px !important;
+                margin: 0 1.5px !important;
+            }
+
+            .flip-clock-divider .flip-clock-label {
+                right: -36px !important;
             }
 
             .flip-clock-divider .flip-clock-dot {
-                width: 4px;
-                height: 4px;
+                width: 5px !important;
+                height: 5px !important;
             }
 
             .flip-clock-label {
-                font-size: 7px;
+                font-size: 7px !important;
             }
         }
 
+        /* Móviles muy pequeños */
         @media (max-width: 360px) {
+            .flipTimebox {
+                overflow-x: auto;
+                padding: 5px 0;
+            }
+
             .flip-clock-wrapper ul {
-                width: 24px;
-                height: 36px;
+                width: 26px !important;
+                height: 40px !important;
+                margin: 0 1px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 34px;
-                font-size: 24px;
+                line-height: 38px !important;
+                font-size: 26px !important;
             }
 
             .flip-clock-divider {
-                width: 8px;
+                width: 10px !important;
+                margin: 0 1px !important;
+            }
+
+            .flip-clock-divider .flip-clock-label {
+                right: -30px !important;
             }
 
             .flip-clock-divider .flip-clock-dot {
-                width: 3px;
-                height: 3px;
+                width: 4px !important;
+                height: 4px !important;
             }
 
             .flip-clock-label {
-                font-size: 6px;
+                font-size: 6px !important;
             }
         }
 
@@ -684,10 +731,6 @@
             .fh5co-cover .display-t,
             .fh5co-cover .display-tc {
                 height: 700px;
-            }
-
-            .flipTimebox {
-                transform: scale(0.9);
             }
         }
 
