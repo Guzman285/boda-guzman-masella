@@ -1,104 +1,263 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<html lang="es">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Guzman ❤️ Masella 24.01.26</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nos casamos y queremos que seas parte de este día especial." />
-    <meta name="keywords" content="guzman,masella,boda,wedding,website,rsvp" />
-    <meta name="author" content="Guzman & Masella" />
+    <title>Guzman ❤️ Masella 24.01.26</title>
+    <meta name="description" content="Nos casamos y queremos que seas parte de este día especial.">
 
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:image" content="images/og.jpg"/>
-    <meta property="og:site_name" content="Guzman ❤️ Masella">
-    <meta property="og:title" content="Guzman ❤️ Masella">
-    <meta property="og:description" content="Nos casamos y queremos que seas parte de este día especial.">
-    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    <!-- Website to visit when clicked in fb or WhatsApp-->
-    <meta property="og:url" content="https://we.shyamjos.com">
-    <meta property="og:type" content="website"/>
-    <meta property="og:image:type" content="image/jpeg">
-
-
-
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
-    
-    <!-- clock   -->
-    <link rel="stylesheet" href="css/responsive-clock.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
+    <link href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
-    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
-
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-
-    <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
 
-
-    <!-- Estilos personalizados para mejorar el reloj -->
     <style>
-        .flipTimebox {
-            margin: 30px auto !important;
-            text-align: center;
-        }
-        .flip-clock-wrapper {
-            text-align: center;
-            display: inline-block;
-        }
-        .flip-clock-wrapper * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            -o-box-sizing: border-box;
+        /* ==== ESTILOS GLOBALES ==== */
+        * {
             box-sizing: border-box;
         }
 
-        /* FIX PRINCIPAL: Eliminar altura fija de 700px del CSS original */
-        #fh5co-event {
-            height: auto !important;
-            min-height: 850px !important;
+        body {
+            font-family: 'Work Sans', sans-serif;
+            overflow-x: hidden;
         }
 
-        #fh5co-event .display-t,
-        #fh5co-event .display-tc {
-            height: auto !important;
-            min-height: 700px !important;
-            display: block !important;
+        /* ==== SECCIONES ==== */
+        .seccion {
+            padding: 100px 0;
         }
 
-        #fh5co-event .event-wrap {
-            overflow: visible !important;
-            min-height: auto !important;
-            height: auto !important;
-            padding-bottom: 40px !important;
+        .seccion-gris {
+            background-color: #f9f9f9;
         }
 
-        #fh5co-event iframe {
-            position: relative !important;
-            z-index: 1 !important;
+        /* ==== TÍTULOS ==== */
+        .titulo-seccion {
+            color: #2C5F8D;
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-family: 'Sacramento', cursive;
         }
 
-        /* Modal de confirmación */
+        /* ==== VERSÍCULO BÍBLICO ==== */
+        .versiculo {
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            line-height: 1.6;
+            font-weight: 500;
+            padding: 0 20px;
+            margin: 30px 0;
+        }
+
+        .versiculo-referencia {
+            font-size: 36px;
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* ==== CONTADOR ==== */
+        .flipTimebox {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        /* ==== EVENTOS ==== */
+        .evento-card {
+            background: white;
+            border: 2px solid rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 40px 30px;
+            margin: 20px 10px;
+            min-height: 650px;
+        }
+
+        .evento-titulo {
+            font-size: 24px;
+            color: #000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Sofia Sans Condensed';
+        }
+
+        .evento-info {
+            margin: 20px 0;
+        }
+
+        .evento-info i {
+            color: #000;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .evento-mapa {
+            margin: 20px 0;
+        }
+
+        .evento-mapa iframe {
+            border-radius: 10px;
+            width: 100%;
+            height: 250px;
+        }
+
+        /* ==== BOTONES ==== */
+        .boton {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin: 10px 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .boton-primary {
+            background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3);
+        }
+
+        .boton-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 95, 141, 0.4);
+            color: white;
+        }
+
+        .boton-outline {
+            background: white;
+            color: #2C5F8D;
+            border: 2px solid #2C5F8D;
+        }
+
+        .boton-outline:hover {
+            background: #2C5F8D;
+            color: white;
+        }
+
+        /* ==== CÓDIGO DE VESTIMENTA ==== */
+        .dresscode-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            min-height: 280px;
+        }
+
+        .dresscode-icono {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .dresscode-icono-mujer {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+        }
+
+        .dresscode-icono-hombre {
+            background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%);
+        }
+
+        .dresscode-icono span {
+            font-size: 45px;
+            color: white;
+        }
+
+        /* ==== MESA DE REGALOS ==== */
+        .regalo-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .regalo-logo {
+            height: 120px;
+            margin-bottom: 5px;
+        }
+
+        .regalo-icono {
+            font-size: 60px;
+            color: #3B7BB5;
+            margin-bottom: 20px;
+        }
+
+        /* ==== GALERÍA ==== */
+        #fh5co-gallery-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #fh5co-gallery-list li {
+            width: 33.33%;
+            float: left;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* ==== REPRODUCTOR DE MÚSICA ==== */
+        .reproductor-musica {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            background: rgba(44, 95, 141, 0.95);
+            padding: 15px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reproductor-boton {
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
+        }
+
+        .reproductor-boton:hover {
+            transform: scale(1.1);
+        }
+
+        .reproductor-boton:active {
+            transform: scale(0.95);
+        }
+
+        /* ==== MODAL ==== */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -107,11 +266,12 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.7);
-            z-index: 9999;
+            z-index: 10000;
             justify-content: center;
             align-items: center;
         }
-        .modal-content {
+
+        .modal-contenido {
             background: white;
             padding: 40px;
             border-radius: 20px;
@@ -119,52 +279,10 @@
             max-width: 500px;
             width: 90%;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            animation: slideIn 0.3s ease-out;
+            position: relative;
         }
-        @keyframes slideIn {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        .modal-content h3 {
-            color: #2C5F8D;
-            margin-bottom: 30px;
-            font-family: 'Sacramento', cursive;
-            font-size: 32px;
-        }
-        .modal-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .modal-btn {
-            padding: 15px 30px;
-            border: none;
-            border-radius: 25px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        .modal-btn-novia {
-            background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%);
-            color: white;
-        }
-        .modal-btn-novio {
-            background: linear-gradient(135deg, #3B7BB5 0%, #1E4A6D 100%);
-            color: white;
-        }
-        .modal-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-        .modal-close {
+
+        .modal-cerrar {
             position: absolute;
             top: 15px;
             right: 20px;
@@ -174,569 +292,420 @@
             background: none;
             border: none;
         }
-        .modal-close:hover {
+
+        .modal-cerrar:hover {
             color: #333;
         }
 
-        /* Fix para overlay que bloquea clics en eventos */
-        #fh5co-event .overlay {
-            pointer-events: none !important;
+        .modal-titulo {
+            color: #2C5F8D;
+            font-family: 'Sacramento', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
-        /* Estilos responsivos para móviles */
-        @media screen and (max-width: 768px) {
-            /* Fix para eventos en móvil */
-            #fh5co-event {
-                height: auto !important;
-                min-height: auto !important;
-                padding: 50px 0 !important;
+        .modal-botones {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .modal-boton {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+        }
+
+        .modal-boton:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-boton-novia {
+            background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%);
+        }
+
+        .modal-boton-novio {
+            background: linear-gradient(135deg, #3B7BB5 0%, #1E4A6D 100%);
+        }
+
+        /* ==== RESPONSIVE ==== */
+        @media (max-width: 768px) {
+            .versiculo {
+                font-size: 32px;
             }
 
-            #fh5co-event .display-t,
-            #fh5co-event .display-tc {
-                height: auto !important;
-                min-height: auto !important;
-            }
-
-            /* Modal responsivo */
-            .modal-content {
-                padding: 25px 20px;
-                width: 95%;
-                max-width: 400px;
-            }
-            .modal-content h3 {
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-            .modal-content p {
-                font-size: 14px !important;
-                margin-bottom: 15px !important;
-            }
-            .modal-buttons {
-                flex-direction: column;
-                gap: 12px;
-            }
-            .modal-btn {
-                width: 100%;
-                padding: 14px 20px;
-                font-size: 15px;
-            }
-            .modal-close {
-                top: 10px;
-                right: 15px;
+            .versiculo-referencia {
                 font-size: 24px;
             }
 
-
-            /* Secciones de Dress Code y Regalos */
-            #fh5co-dresscode .fh5co-heading h2,
-            #fh5co-gifts .fh5co-heading h2 {
-                font-size: 28px !important;
-            }
-            #fh5co-dresscode .fh5co-heading p,
-            #fh5co-gifts .fh5co-heading p {
-                font-size: 16px !important;
-            }
-            #fh5co-dresscode h3,
-            #fh5co-gifts h3 {
-                font-size: 20px !important;
-            }
-            #fh5co-dresscode i,
-            #fh5co-gifts i {
-                font-size: 40px !important;
-            }
-            #fh5co-dresscode p,
-            #fh5co-gifts p {
-                font-size: 15px !important;
+            .titulo-seccion {
+                font-size: 28px;
             }
 
-
-            /* Tarjetas de regalos y dresscode */
-            #fh5co-gifts .col-md-6 > div,
-            #fh5co-dresscode .col-md-6 > div {
-                margin: 10px 5px !important;
-                padding: 30px 20px !important;
-                min-height: auto !important;
+            .evento-card {
+                min-height: auto;
+                margin: 10px 0;
             }
 
-
-            /* Iconos circulares en dresscode */
-            #fh5co-dresscode div[style*="width: 80px"] {
-                width: 65px !important;
-                height: 65px !important;
-            }
-
-
-            /* Quote bíblico */
-            h2[style*="font-size: 50px"] {
-                font-size: 32px !important;
-                padding: 0 15px !important;
-                line-height: 1.5 !important;
-            }
-            h2[style*="font-size: 50px"] span {
-                font-size: 24px !important;
-            }
-
-
-            /* Reloj countdown */
-            .flipTimebox {
-                transform: scale(0.85);
-                transform-origin: center center;
-                display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-                width: 100% !important;
-            }
-            .flip-clock-wrapper {
-                margin: 0 auto !important;
-                display: flex !important;
-                justify-content: center !important;
-            }
-            .clock {
-                margin: 0 auto !important;
-                text-align: center !important;
-            }
-
-
-            /* Eventos - mapas y botones en móvil */
-            #fh5co-event iframe {
-                height: 250px !important;
-            }
-            #fh5co-event .display-tc {
-                display: block !important;
-                height: auto !important;
-            }
-            #fh5co-event .display-t {
-                display: block !important;
-                height: auto !important;
-            }
-            #fh5co-event .event-wrap {
-                height: auto !important;
-                min-height: auto !important;
-            }
-            #fh5co-event .btn,
-            #fh5co-event button {
-                position: relative !important;
-                z-index: 999 !important;
-                pointer-events: auto !important;
-                cursor: pointer !important;
-                touch-action: manipulation !important;
-            }
-
-
-            /* Galería de fotos */
             #fh5co-gallery-list li {
-                width: 100% !important;
-                min-height: 300px !important;
-                height: auto !important;
+                width: 100%;
+                height: 300px;
             }
-            #fh5co-gallery-list li a {
-                min-height: 300px !important;
+
+            .modal-botones {
+                flex-direction: column;
+            }
+
+            .modal-boton {
+                width: 100%;
+            }
+
+            .reproductor-musica span {
+                max-width: 80px;
+                font-size: 11px;
+            }
+
+            .reproductor-boton {
+                width: 40px;
+                height: 40px;
             }
         }
 
-
-        @media screen and (max-width: 480px) {
-            /* Ajustes extra para pantallas muy pequeñas */
-            .modal-content h3 {
-                font-size: 20px;
-            }
-            .modal-btn {
-                padding: 12px 15px;
-                font-size: 14px;
+        @media (max-width: 480px) {
+            .versiculo {
+                font-size: 28px;
             }
 
-
-            /* Quote más pequeño */
-            h2[style*="font-size: 50px"] {
-                font-size: 28px !important;
-            }
-            h2[style*="font-size: 50px"] span {
-                font-size: 22px !important;
+            .versiculo-referencia {
+                font-size: 22px;
             }
 
-
-            /* Reloj más pequeño */
             .flipTimebox {
                 transform: scale(0.7);
-                transform-origin: center center;
-            }
-
-
-            /* Tarjetas de regalos más compactas */
-            #fh5co-gifts .col-md-6 > div {
-                padding: 25px 15px !important;
-            }
-            #fh5co-gifts i {
-                font-size: 35px !important;
-            }
-
-
-            /* Reproductor de música en móvil */
-            #music-player {
-                padding: 10px 15px !important;
-                bottom: 10px !important;
-                right: 10px !important;
-            }
-            #music-player span {
-                max-width: 80px !important;
-                font-size: 11px !important;
-            }
-            #play-pause-btn {
-                width: 40px !important;
-                height: 40px !important;
-            }
-            #music-icon {
-                font-size: 18px !important;
             }
         }
 
-
-        /* Estilos adicionales para el reproductor */
-        #play-pause-btn:hover {
-            transform: scale(1.1);
-        }
-        #play-pause-btn:active {
-            transform: scale(0.95);
+        /* Fix overlay en eventos */
+        #fh5co-event .overlay {
+            pointer-events: none;
         }
     </style>
 
-
-    <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+</head>
+<body>
 
-
-    </head>
-    <body>
-        
     <div class="fh5co-loader"></div>
-    
+
     <div id="page">
-    <nav class="fh5co-nav" role="navigation">
-        <div class="container">
-            <div class="row">
-    
-                <div class="col-xs-10 text-right menu-1">
-                    <ul>
-                        <li class="active"><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="#fh5co-event">Eventos</a></li>
-                        <li class="active"><a href="#fh5co-gallery">Galería</a></li>
-                        <li class="active"><a href="#fh5co-services">Destacados</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-    </nav>
-
-
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image: url('images/bg.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <div class="display-t">
-                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                            <h1>Guzman &amp; Masella</h1>
-                            <br>
-                            <img src="images/fprint.png" alt="Guzman + Masella"> 
-                            <h2>24.01.26</h2>
-                            <h2 style="font-size: 50px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7), -1px -1px 2px rgba(255,255,255,0.3); line-height: 1.6; font-weight: 500; padding: 0 20px;">"Por eso dejará el hombre a su padre y a su madre, y se unirá a su mujer, y los dos llegarán a ser un solo cuerpo. Así que ya no son dos, sino uno solo." <br><span style="font-size: 36px; margin-top: 10px; display: inline-block;">Mateo 19:5-6</span></h2>
-                            <div class="flipTimebox">
-                                <div class="clock clock-fix"></div>
-                              </div>
-                            <p><a href="#fh5co-event" class="btn btn-default btn-sm">Reserva la fecha</a></p>
-                        </div>
+        <!-- NAVEGACIÓN -->
+        <nav class="fh5co-nav" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#fh5co-event">Eventos</a></li>
+                            <li><a href="#fh5co-gallery">Galería</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
 
+        <!-- HEADER -->
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image: url('images/bg.jpg');" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="display-t">
+                            <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                                <h1>Guzman & Masella</h1>
+                                <br>
+                                <img src="images/fprint.png" alt="Guzman + Masella">
+                                <h2>24.01.26</h2>
 
-
-
-    <div id="fh5co-event" class="fh5co-bg" style="padding-bottom: 100px !important;">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                    <h2 style="color: #2C5F8D;">Eventos</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                            <div class="col-md-6 col-sm-6 text-center">
-                                <div class="event-wrap animate-box" style="height: auto !important; overflow: visible !important; min-height: auto !important; padding-bottom: 30px !important;">
-                                    <h3>Ceremonia Religiosa</h3>
-                                    <div class="event-col">
-                                        <i class="icon-calendar"></i>
-                                        <span>24 Enero 2026</span>
-                                    </div>
-                                    <div class="event-col">
-
-
-                                        <i class="icon-clock"></i>
-                                        <span>16:00 horas</span>
-                                    </div>
-                                    <p>Lugar: <b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
-                                    <div style="position: relative; width: 100%; max-width: 400px; margin: 15px auto;">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" width="100%" height="200" frameborder="0" style="border:0; border-radius: 10px; position: relative; z-index: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Ceremonia Civil"></iframe>
-                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px !important; background: white !important; border: 2px solid #2C5F8D !important; color: #2C5F8D !important; padding: 8px 20px !important; font-size: 13px !important; border-radius: 20px !important; display: inline-block !important; text-decoration: none !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; visibility: visible !important; opacity: 1 !important;">
-                                            <i class="icon-location-pin" style="margin-right: 5px;"></i>¿Cómo llegar?
-                                        </a>
-                                    </div>
-                                    <div style="margin-top: 25px; position: relative; z-index: 10000;">
-                                        <a href="javascript:void(0);" onclick="confirmarAsistencia(); return false;" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border: none; padding: 12px 30px; font-size: 15px; border-radius: 25px; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3); color: white; text-decoration: none; display: inline-block;">
-                                            <i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
-                                        </a>
-                                    </div>
+                                <div class="versiculo">
+                                    "Por eso dejará el hombre a su padre y a su madre, y se unirá a su mujer, y los dos llegarán a ser un solo cuerpo. Así que ya no son dos, sino uno solo."
+                                    <span class="versiculo-referencia">Mateo 19:5-6</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 text-center">
-                                <div class="event-wrap animate-box" style="height: auto !important; overflow: visible !important; min-height: auto !important; padding-bottom: 30px !important;">
-                                    <h3>Recepción</h3>
-                                    <div class="event-col">
-                                        <i class="icon-calendar"></i>
-                                        <span>24 Enero 2026</span>
-                                    </div>
-                                    <div class="event-col">
 
-
-                                        <i class="icon-clock"></i>
-                                        <span>18:00 horas</span>
-                                    </div>
-                                    <p>Lugar: <b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
-                                    <div style="position: relative; width: 100%; max-width: 400px; margin: 15px auto;">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" width="100%" height="200" frameborder="0" style="border:0; border-radius: 10px; position: relative; z-index: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Recepción"></iframe>
-                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px !important; background: white !important; border: 2px solid #2C5F8D !important; color: #2C5F8D !important; padding: 8px 20px !important; font-size: 13px !important; border-radius: 20px !important; display: inline-block !important; text-decoration: none !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; visibility: visible !important; opacity: 1 !important;">
-                                            <i class="icon-location-pin" style="margin-right: 5px;"></i>¿Cómo llegar?
-                                        </a>
-                                    </div>
-                                    <div style="margin-top: 25px; position: relative; z-index: 10000;">
-                                        <a href="javascript:void(0);" onclick="confirmarAsistencia(); return false;" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border: none; padding: 12px 30px; font-size: 15px; border-radius: 25px; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3); color: white; text-decoration: none; display: inline-block;">
-                                            <i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
-                                        </a>
-                                    </div>
+                                <div class="flipTimebox">
+                                    <div class="clock clock-fix"></div>
                                 </div>
+
+                                <p><a href="#fh5co-event" class="btn btn-default btn-sm">Reserva la fecha</a></p>
                             </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Código de Vestimenta -->
-    <div id="fh5co-dresscode" class="fh5co-bg" style="background-color: #f9f9f9; padding-top: 100px; padding-bottom: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                    <h2 style="color: #2C5F8D;">Código de Vestimenta</h2>
-                    <p style="font-size: 22px; margin-top: 25px; margin-bottom: 50px; font-weight: 600; letter-spacing: 2px; color: #3B7BB5; text-transform: uppercase; border-bottom: 3px solid #4A90C8; display: inline-block; padding-bottom: 10px;">Etiqueta Formal</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center animate-box">
-                    <div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);">
-                            <span style="font-size: 45px; color: white;">♀</span>
-                        </div>
-                        <h3 style="color: #3B7BB5; font-size: 24px; margin-bottom: 15px; font-weight: 600;">Damas</h3>
-                        <p style="font-size: 18px; color: #666; margin-bottom: 10px;">Vestido largo</p>
-                        <p style="font-size: 14px; color: #999; font-style: italic;">(Por favor, evitar el color blanco y rojo)</p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center animate-box">
-                    <div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3);">
-                            <span style="font-size: 45px; color: white;">♂</span>
-                        </div>
-                        <h3 style="color: #3B7BB5; font-size: 24px; margin-bottom: 15px; font-weight: 600;">Caballeros</h3>
-                        <p style="font-size: 18px; color: #666;">Traje Formal</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Regalos -->
-    <div id="fh5co-gifts" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                    <h2 style="color: #2C5F8D;">Mesa de Regalos</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center animate-box">
-                    <div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <img src="images/cemaco-logo-removebg-preview.png" alt="Cemaco Logo" style="height: 120px; margin-bottom: 5px; display: block; margin-left: auto; margin-right: auto;">
-                            <h3 style="color: #3B7BB5; font-size: 22px; margin-bottom: 20px; margin-top: 0;">Lista Cemaco</h3>
-                            <p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 25px;">Hemos creado una lista de regalos con artículos que nos ayudarán a construir nuestro hogar juntos.</p>
-                        </div>
-                        <a href="https://www.cemaco.com/list/BODAGUZMANMASELLA24012026" target="_blank" class="btn btn-primary" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border: none; padding: 12px 30px; border-radius: 25px; color: white; text-decoration: none; display: inline-block;">
-                            Ver Lista
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center animate-box">
-                    <div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <i class="icon-wallet" style="font-size: 60px; color: #3B7BB5; margin-bottom: 20px; display: block;"></i>
-                            <h3 style="color: #3B7BB5; font-size: 22px; margin-bottom: 20px;">Lluvia de Sobres</h3>
-                            <p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 25px;">Si prefieres obsequiarnos algo especial, una contribución monetaria nos ayudará a comenzar nuestra nueva vida juntos.</p>
-                        </div>
-                        <div style="padding: 12px 30px; opacity: 0;">
-                            <!-- Spacer para mantener altura igual -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </header>
 
-
-    <!-- Galería -->
-    <div id="fh5co-gallery" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                    <h2 style="color: #2C5F8D;">Galería</h2>
+        <!-- EVENTOS -->
+        <div id="fh5co-event" class="seccion fh5co-bg">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="titulo-seccion">Eventos</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row row-bottom-padded-md">
-                <div class="col-md-12">
-                    <ul id="fh5co-gallery-list">
 
+                <div class="row">
+                    <!-- Ceremonia Religiosa -->
+                    <div class="col-md-6">
+                        <div class="evento-card">
+                            <h3 class="evento-titulo">Ceremonia Religiosa</h3>
 
-                        <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url('images/fundicion-18.jpg');">
-                        <a href="images/fundicion-18.jpg" class="image-popup">
-                            <div class="case-studies-summary">
+                            <div class="evento-info">
+                                <i class="icon-calendar"></i>
+                                <span>24 Enero 2026</span>
                             </div>
-                        </a>
-                    </li>
 
-
-                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url('images/fundicion-39.jpg');">
-                        <a href="images/fundicion-39.jpg" class="image-popup">
-                            <div class="case-studies-summary">
+                            <div class="evento-info">
+                                <i class="icon-clock"></i>
+                                <span>16:00 horas</span>
                             </div>
-                        </a>
-                    </li>
-                    <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url('images/fundicion-43.jpg');">
-                        <a href="images/fundicion-43.jpg" class="image-popup">
-                            <div class="case-studies-summary">
+
+                            <p><b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
+
+                            <div class="evento-mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Ceremonia"></iframe>
                             </div>
-                        </a>
-                    </li>
 
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="boton boton-outline">
+                                <i class="icon-location-pin"></i> ¿Cómo llegar?
+                            </a>
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <br><br>
 
+                            <a href="#" onclick="abrirModal(); return false;" class="boton boton-primary">
+                                <i class="icon-heart"></i> Confirmar Asistencia
+                            </a>
+                        </div>
+                    </div>
 
-    <div id="fh5co-services" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
-        <div class="container">
-            
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2 style="color: #2C5F8D;">Destacados</h2>
+                    <!-- Recepción -->
+                    <div class="col-md-6">
+                        <div class="evento-card">
+                            <h3 class="evento-titulo">Recepción</h3>
 
+                            <div class="evento-info">
+                                <i class="icon-calendar"></i>
+                                <span>24 Enero 2026</span>
+                            </div>
 
-                </div>
-            </div>
+                            <div class="evento-info">
+                                <i class="icon-clock"></i>
+                                <span>18:00 horas</span>
+                            </div>
 
+                            <p><b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
 
+                            <div class="evento-mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Recepción"></iframe>
+                            </div>
 
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="boton boton-outline">
+                                <i class="icon-location-pin"></i> ¿Cómo llegar?
+                            </a>
 
-                <div class="container animate-box">
-                    <div class="fh5co-video fh5co-bg" style="background-image: url('images/img_bg_3.jpg');">
-                        <a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>
-                        <div class="overlay"></div>
+                            <br><br>
+
+                            <a href="#" onclick="abrirModal(); return false;" class="boton boton-primary">
+                                <i class="icon-heart"></i> Confirmar Asistencia
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-    </div>
-    <!-- Reproductor de Música de Fondo -->
-    <audio id="background-music" loop>
-        <source src="music/que-suerte-tenerte.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
 
+        <!-- CÓDIGO DE VESTIMENTA -->
+        <div id="fh5co-dresscode" class="seccion seccion-gris">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="titulo-seccion">Código de Vestimenta</h2>
+                        <p style="font-size: 22px; font-weight: 600; letter-spacing: 2px; color: #3B7BB5; text-transform: uppercase; border-bottom: 3px solid #4A90C8; display: inline-block; padding-bottom: 10px;">Etiqueta Formal</p>
+                    </div>
+                </div>
 
-    <div id="music-player" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: rgba(44, 95, 141, 0.95); padding: 15px 20px; border-radius: 50px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 12px;">
-        <button id="play-pause-btn" onclick="toggleMusic()" style="background: white; border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <i id="music-icon" class="icon-play" style="font-size: 20px; color: #2C5F8D; margin-left: 2px;"></i>
-        </button>
-        <span style="color: white; font-size: 14px; font-weight: 500; max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Qué Suerte Tenerte</span>
-    </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-6">
+                        <div class="dresscode-card text-center">
+                            <div class="dresscode-icono dresscode-icono-mujer">
+                                <span>♀</span>
+                            </div>
+                            <h3 style="color: #3B7BB5; font-size: 24px; margin-bottom: 15px;">Damas</h3>
+                            <p style="font-size: 18px; color: #666; margin-bottom: 10px;">Vestido largo</p>
+                            <p style="font-size: 14px; color: #999; font-style: italic;">(Por favor, evitar el color blanco y rojo)</p>
+                        </div>
+                    </div>
 
-
-    <!-- Modal de Confirmación de Asistencia -->
-    <div id="modalAsistencia" class="modal-overlay">
-        <div class="modal-content" style="position: relative;">
-            <button class="modal-close" onclick="cerrarModal()">&times;</button>
-            <h3>¿Eres invitado de...?</h3>
-            <p style="color: #2C5F8D; font-size: 16px; margin-bottom: 10px; font-weight: 500;">Por favor confirma antes del 5 de enero de 2026</p>
-            <p style="color: #666; font-size: 14px; margin-bottom: 25px; font-style: italic;">Para disfrutar plenamente de nuestra celebración, hemos decidido que sea un evento solo para adultos. Agradecemos tu comprensión.</p>
-            <div class="modal-buttons">
-                <button class="modal-btn modal-btn-novia" onclick="confirmarNovia()">
-                    <i class="icon-heart" style="margin-right: 8px;"></i>La Novia (Masella)
-                </button>
-                <button class="modal-btn modal-btn-novio" onclick="confirmarNovio()">
-                    <i class="icon-heart" style="margin-right: 8px;"></i>El Novio (Guzman)
-                </button>
+                    <div class="col-md-6">
+                        <div class="dresscode-card text-center">
+                            <div class="dresscode-icono dresscode-icono-hombre">
+                                <span>♂</span>
+                            </div>
+                            <h3 style="color: #3B7BB5; font-size: 24px; margin-bottom: 15px;">Caballeros</h3>
+                            <p style="font-size: 18px; color: #666;">Traje Formal</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- MESA DE REGALOS -->
+        <div id="fh5co-gifts" class="seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="titulo-seccion">Mesa de Regalos</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="regalo-card text-center">
+                            <div>
+                                <img src="images/cemaco-logo-removebg-preview.png" alt="Cemaco Logo" class="regalo-logo">
+                                <h3 style="color: #3B7BB5; font-size: 22px; margin: 10px 0 20px;">Lista Cemaco</h3>
+                                <p style="font-size: 16px; color: #666; line-height: 1.6;">Hemos creado una lista de regalos con artículos que nos ayudarán a construir nuestro hogar juntos.</p>
+                            </div>
+                            <a href="https://www.cemaco.com/list/BODAGUZMANMASELLA24012026" target="_blank" class="boton boton-primary">Ver Lista</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="regalo-card text-center">
+                            <div>
+                                <i class="icon-wallet regalo-icono"></i>
+                                <h3 style="color: #3B7BB5; font-size: 22px; margin-bottom: 20px;">Lluvia de Sobres</h3>
+                                <p style="font-size: 16px; color: #666; line-height: 1.6;">Si prefieres obsequiarnos algo especial, una contribución monetaria nos ayudará a comenzar nuestra nueva vida juntos.</p>
+                            </div>
+                            <div style="height: 48px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <div id="fh5co-gallery" class="seccion seccion-gris">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="titulo-seccion">Galería</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="fh5co-gallery-list">
+                            <li class="animate-box" style="background-image: url('images/fundicion-18.jpg');">
+                                <a href="images/fundicion-18.jpg" class="image-popup">
+                                    <div class="case-studies-summary"></div>
+                                </a>
+                            </li>
+                            <li class="animate-box" style="background-image: url('images/fundicion-39.jpg');">
+                                <a href="images/fundicion-39.jpg" class="image-popup">
+                                    <div class="case-studies-summary"></div>
+                                </a>
+                            </li>
+                            <li class="animate-box" style="background-image: url('images/fundicion-43.jpg');">
+                                <a href="images/fundicion-43.jpg" class="image-popup">
+                                    <div class="case-studies-summary"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESTACADOS -->
+        <div id="fh5co-services" class="seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="titulo-seccion">Destacados</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fh5co-video fh5co-bg" style="background-image: url('images/img_bg_3.jpg');">
+                            <a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REPRODUCTOR DE MÚSICA -->
+        <audio id="background-music" loop>
+            <source src="music/que-suerte-tenerte.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="reproductor-musica">
+            <button class="reproductor-boton" onclick="toggleMusica()">
+                <i id="music-icon" class="icon-play" style="font-size: 20px; color: #2C5F8D; margin-left: 2px;"></i>
+            </button>
+            <span style="color: white; font-size: 14px; font-weight: 500;">Qué Suerte Tenerte</span>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modalAsistencia" class="modal-overlay">
+            <div class="modal-contenido">
+                <button class="modal-cerrar" onclick="cerrarModal()">&times;</button>
+                <h3 class="modal-titulo">¿Eres invitado de...?</h3>
+                <p style="color: #2C5F8D; font-size: 16px; margin-bottom: 10px; font-weight: 500;">Por favor confirma antes del 5 de enero de 2026</p>
+                <p style="color: #666; font-size: 14px; margin-bottom: 25px; font-style: italic;">Para disfrutar plenamente de nuestra celebración, hemos decidido que sea un evento solo para adultos. Agradecemos tu comprensión.</p>
+                <div class="modal-botones">
+                    <button class="modal-boton modal-boton-novia" onclick="confirmarNovia()">
+                        <i class="icon-heart" style="margin-right: 8px;"></i>La Novia (Masella)
+                    </button>
+                    <button class="modal-boton modal-boton-novio" onclick="confirmarNovio()">
+                        <i class="icon-heart" style="margin-right: 8px;"></i>El Novio (Guzman)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÓN IR ARRIBA -->
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
     </div>
 
-
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-    </div>
-
-
-    <!-- jQuery -->
+    <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
-    <!-- clock -->
     <script src="js/clock.js"></script>
-        <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
     <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- countTo -->
-    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
     <script src='https://momentjs.com/downloads/moment.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js'></script>
-    <!-- Stellar -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
-
-
-    <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-    <script src="js/simplyCountdown.js"></script>
-    <!-- Main -->
     <script src="js/main.js"></script>
-    <!-- Traducir etiquetas del reloj al español -->
+
     <script>
+        // Traducir reloj al español
         $(document).ready(function() {
             setTimeout(function() {
                 $('.flip-clock-label').each(function() {
@@ -747,35 +716,39 @@
                     if (text === 'seconds') $(this).text('Segundos');
                 });
             }, 100);
+
+            // Intentar reproducir música automáticamente
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(function() {
+                    isPlaying = true;
+                    document.getElementById('music-icon').className = 'icon-pause';
+                }).catch(function() {
+                    console.log('Autoplay bloqueado');
+                });
+            }
         });
 
-
-        // Funciones del modal de confirmación
-        function confirmarAsistencia() {
+        // MODAL
+        function abrirModal() {
             document.getElementById('modalAsistencia').style.display = 'flex';
         }
-
 
         function cerrarModal() {
             document.getElementById('modalAsistencia').style.display = 'none';
         }
 
-
         function confirmarNovia() {
-            // Número de WhatsApp para invitados de la novia (Masella)
             window.open('https://wa.me/50247700182?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
             cerrarModal();
         }
 
-
         function confirmarNovio() {
-            // Número de WhatsApp para invitados del novio (Guzman)
             window.open('https://wa.me/50242154639?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
             cerrarModal();
         }
 
-
-        // Cerrar modal al hacer clic fuera de él
+        // Cerrar modal al hacer clic fuera
         document.addEventListener('click', function(event) {
             var modal = document.getElementById('modalAsistencia');
             if (event.target === modal) {
@@ -783,32 +756,11 @@
             }
         });
 
-
-        // Reproductor de música MP3
+        // REPRODUCTOR DE MÚSICA
         var audio = document.getElementById('background-music');
         var isPlaying = false;
 
-
-        // Intentar reproducir automáticamente cuando la página carga
-        $(document).ready(function() {
-            // Intentar reproducir automáticamente
-            var playPromise = audio.play();
-
-
-            if (playPromise !== undefined) {
-                playPromise.then(function() {
-                    // Reproducción automática exitosa
-                    isPlaying = true;
-                    document.getElementById('music-icon').className = 'icon-pause';
-                }).catch(function(error) {
-                    // Autoplay bloqueado, el usuario debe hacer clic
-                    console.log('Autoplay bloqueado. Click en el botón para reproducir.');
-                });
-            }
-        });
-
-
-        function toggleMusic() {
+        function toggleMusica() {
             if (isPlaying) {
                 audio.pause();
                 document.getElementById('music-icon').className = 'icon-play';
@@ -820,5 +772,5 @@
             }
         }
     </script>
-    </body>
+</body>
 </html>
