@@ -221,7 +221,7 @@
 		burgerMenu();
 		contentWayPoint();
 		dropdown();
-		testimonialCarousel();
+		// testimonialCarousel(); // Comentado - no usamos OwlCarousel
 		goToTop();
 		loaderPage();
 		counter();
