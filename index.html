@@ -644,7 +644,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="fh5co-video fh5co-bg" style="background-image: url('images/img_bg_3.jpg');">
+                        <div class="fh5co-video fh5co-bg" style="background-image: url('images/bg.jpg');">
                             <a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>
                             <div class="overlay"></div>
                         </div>
@@ -702,6 +702,12 @@
     <script src='https://momentjs.com/downloads/moment.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js'></script>
+    <script>
+        // Prevenir error de OwlCarousel que no se usa
+        window.testimonialCarousel = function() {
+            // No hacer nada - no usamos carrusel de testimonios
+        };
+    </script>
     <script src="js/main.js"></script>
 
     <script>
