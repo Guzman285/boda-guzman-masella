@@ -228,75 +228,47 @@
 
         @media (max-width: 768px) {
             .flipTimebox {
-                transform: scale(0.7);
+                transform: scale(0.5);
                 transform-origin: center center;
-                overflow: visible !important;
-            }
-
-            .flip-clock-wrapper {
-                display: flex !important;
-                flex-wrap: wrap !important;
-                justify-content: center !important;
-                max-width: 280px !important;
-                margin: 0 auto !important;
+                overflow-x: visible !important;
             }
 
             .flip-clock-wrapper ul {
-                width: 50px !important;
-                height: 75px !important;
-                margin: 3px !important;
+                width: 38px !important;
+                height: 57px !important;
+                margin: 0 1px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 73px !important;
-                font-size: 36px !important;
+                line-height: 55px !important;
+                font-size: 28px !important;
             }
 
             .flip-clock-divider {
-                width: 15px !important;
-                margin: 3px 2px !important;
-            }
-
-            /* Forzar que días y horas estén en la primera fila */
-            .flip-clock-wrapper ul:nth-child(1),
-            .flip-clock-wrapper ul:nth-child(2),
-            .flip-clock-wrapper .flip-clock-divider:nth-child(3),
-            .flip-clock-wrapper ul:nth-child(4),
-            .flip-clock-wrapper ul:nth-child(5) {
-                order: 1;
-            }
-
-            /* Forzar salto de línea después de horas */
-            .flip-clock-wrapper ul:nth-child(5) {
-                margin-right: 100% !important;
+                width: 10px !important;
+                margin: 0 1px !important;
             }
         }
 
         @media (max-width: 480px) {
             .flipTimebox {
-                transform: scale(0.75);
+                transform: scale(0.65);
                 transform-origin: center center;
-                overflow: visible !important;
-            }
-
-            .flip-clock-wrapper {
-                max-width: 240px !important;
+                overflow-x: visible !important;
             }
 
             .flip-clock-wrapper ul {
-                width: 45px !important;
-                height: 68px !important;
-                margin: 2px !important;
+                width: 40px !important;
+                height: 60px !important;
             }
 
             .flip-clock-wrapper ul li {
-                line-height: 66px !important;
+                line-height: 58px !important;
                 font-size: 32px !important;
             }
 
             .flip-clock-divider {
                 width: 12px !important;
-                margin: 2px !important;
             }
 
             .flip-clock-divider .flip-clock-dot {
@@ -307,34 +279,18 @@
 
         @media (max-width: 360px) {
             .flipTimebox {
-                transform: scale(0.68);
+                transform: scale(0.52);
                 transform-origin: center center;
-                overflow: visible !important;
-            }
-
-            .flip-clock-wrapper {
-                max-width: 210px !important;
+                overflow-x: visible !important;
             }
 
             .flip-clock-wrapper ul {
-                width: 40px !important;
-                height: 60px !important;
-                margin: 2px !important;
-            }
-
-            .flip-clock-wrapper ul li {
-                line-height: 58px !important;
-                font-size: 28px !important;
+                width: 35px !important;
+                height: 53px !important;
             }
 
             .flip-clock-divider {
-                width: 10px !important;
-                margin: 2px !important;
-            }
-
-            .flip-clock-divider .flip-clock-dot {
-                width: 4px !important;
-                height: 4px !important;
+                width: 8px !important;
             }
         }
 
