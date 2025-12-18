@@ -181,35 +181,54 @@
         .flip-clock-wrapper {
             margin: 0 auto;
             max-width: 100%;
+            display: inline-block !important;
+            white-space: nowrap;
         }
 
         .flip-clock-wrapper ul {
             width: 60px;
             height: 90px;
+            display: inline-block;
         }
 
         .flip-clock-wrapper ul li {
             line-height: 87px;
         }
 
+        .flip-clock-divider {
+            display: inline-block;
+        }
+
         @media (max-width: 768px) {
             .flipTimebox {
-                transform: scale(0.45);
+                transform: scale(0.6);
                 transform-origin: center;
+            }
+
+            .flip-clock-wrapper {
+                white-space: nowrap !important;
             }
         }
 
         @media (max-width: 480px) {
             .flipTimebox {
-                transform: scale(0.32);
+                transform: scale(0.48);
                 transform-origin: center;
+            }
+
+            .flip-clock-wrapper {
+                white-space: nowrap !important;
             }
         }
 
         @media (max-width: 360px) {
             .flipTimebox {
-                transform: scale(0.28);
+                transform: scale(0.42);
                 transform-origin: center;
+            }
+
+            .flip-clock-wrapper {
+                white-space: nowrap !important;
             }
         }
 
