@@ -186,10 +186,14 @@
             text-align: center;
             width: 100%;
             overflow: visible;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .flipTimebox .clock {
-            display: inline-block;
+            display: block;
+            margin: 0 auto;
         }
 
         /* Forzar que el reloj se mantenga en una línea */
@@ -199,6 +203,7 @@
             width: auto !important;
             white-space: nowrap !important;
             justify-content: center !important;
+            margin: 0 auto !important;
         }
 
         .flip-clock-wrapper ul {
@@ -225,10 +230,10 @@
         /* Tablets */
         @media (max-width: 768px) {
             .flipTimebox {
-                overflow-x: auto;
+                overflow-x: visible;
                 overflow-y: hidden;
                 max-width: 100%;
-                padding: 10px 0;
+                padding: 10px 5px;
             }
 
             .flip-clock-wrapper {
@@ -269,8 +274,8 @@
         /* Móviles pequeños */
         @media (max-width: 480px) {
             .flipTimebox {
-                overflow-x: auto;
-                padding: 5px 0;
+                overflow-x: visible;
+                padding: 5px;
             }
 
             .flip-clock-wrapper ul {
@@ -306,8 +311,8 @@
         /* Móviles muy pequeños */
         @media (max-width: 360px) {
             .flipTimebox {
-                overflow-x: auto;
-                padding: 5px 0;
+                overflow-x: visible;
+                padding: 5px;
             }
 
             .flip-clock-wrapper ul {
