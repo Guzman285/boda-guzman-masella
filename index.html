@@ -282,6 +282,32 @@
 			#fh5co-gifts i {
 				font-size: 35px !important;
 			}
+
+			/* Reproductor de música en móvil */
+			#music-player {
+				padding: 10px 15px !important;
+				bottom: 10px !important;
+				right: 10px !important;
+			}
+			#music-player span {
+				max-width: 80px !important;
+				font-size: 11px !important;
+			}
+			#play-pause-btn {
+				width: 40px !important;
+				height: 40px !important;
+			}
+			#music-icon {
+				font-size: 18px !important;
+			}
+		}
+
+		/* Estilos adicionales para el reproductor */
+		#play-pause-btn:hover {
+			transform: scale(1.1);
+		}
+		#play-pause-btn:active {
+			transform: scale(0.95);
 		}
 	</style>
 
@@ -412,7 +438,7 @@
 	</div>
 
 
-	<div id="fh5co-gallery" class="fh5co-section-gray" style="padding-top: 150px; margin-top: 80px;">
+	<div id="fh5co-gallery" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -450,7 +476,7 @@
 	</div>
 
 	<!-- Código de Vestimenta -->
-	<div id="fh5co-dresscode" class="fh5co-bg" style="background-color: #f9f9f9; padding-top: 80px; margin-top: 40px;">
+	<div id="fh5co-dresscode" class="fh5co-bg" style="background-color: #f9f9f9; padding-top: 100px; padding-bottom: 100px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -483,7 +509,7 @@
 	</div>
 
 	<!-- Regalos -->
-	<div id="fh5co-gifts" class="fh5co-section-gray" style="padding-top: 250px; margin-top: 180px;">
+	<div id="fh5co-gifts" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -520,7 +546,7 @@
 	</div>
 
 
-	<div id="fh5co-services" class="fh5co-section-gray">
+	<div id="fh5co-services" class="fh5co-section-gray" style="padding-top: 100px; padding-bottom: 100px;">
 		<div class="container">
 			
 			<div class="row animate-box">
@@ -542,8 +568,18 @@
 			
 		</div>
 	</div>
-	<!-- YouTube Player (oculto - reproducción automática) -->
-	<div id="youtube-player" style="display: none;"></div>
+	<!-- Reproductor de Música de Fondo -->
+	<audio id="background-music" loop>
+		<source src="music/que-suerte-tenerte.mp3" type="audio/mpeg">
+		Tu navegador no soporta el elemento de audio.
+	</audio>
+
+	<div id="music-player" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: rgba(44, 95, 141, 0.95); padding: 15px 20px; border-radius: 50px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 12px;">
+		<button id="play-pause-btn" onclick="toggleMusic()" style="background: white; border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+			<i id="music-icon" class="icon-play" style="font-size: 20px; color: #2C5F8D; margin-left: 2px;"></i>
+		</button>
+		<span style="color: white; font-size: 14px; font-weight: 500; max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Qué Suerte Tenerte</span>
+	</div>
 
 	<!-- Modal de Confirmación de Asistencia -->
 	<div id="modalAsistencia" class="modal-overlay">
@@ -637,45 +673,36 @@
 			}
 		});
 
-		// Reproductor de música de YouTube - Reproducción automática
-		var player;
+		// Reproductor de música MP3
+		var audio = document.getElementById('background-music');
+		var isPlaying = false;
 
-		// Cargar la API de YouTube
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/iframe_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		// Intentar reproducir automáticamente cuando la página carga
+		$(document).ready(function() {
+			// Intentar reproducir automáticamente
+			var playPromise = audio.play();
 
-		// Esta función se llama automáticamente cuando la API de YouTube está lista
-		function onYouTubeIframeAPIReady() {
-			player = new YT.Player('youtube-player', {
-				height: '0',
-				width: '0',
-				videoId: '7HfabBDl_-o', // ID del video de "Qué Suerte Tenerte"
-				playerVars: {
-					'autoplay': 1, // Reproducción automática activada
-					'controls': 0,
-					'loop': 1,
-					'playlist': '7HfabBDl_-o', // Necesario para el loop
-					'enablejsapi': 1,
-					'mute': 0, // No silenciado
-					'origin': window.location.origin
-				},
-				events: {
-					'onReady': onPlayerReady,
-					'onStateChange': onPlayerStateChange
-				}
-			});
-		}
+			if (playPromise !== undefined) {
+				playPromise.then(function() {
+					// Reproducción automática exitosa
+					isPlaying = true;
+					document.getElementById('music-icon').className = 'icon-pause';
+				}).catch(function(error) {
+					// Autoplay bloqueado, el usuario debe hacer clic
+					console.log('Autoplay bloqueado. Click en el botón para reproducir.');
+				});
+			}
+		});
 
-		function onPlayerReady(event) {
-			// Reproducir automáticamente cuando esté listo
-			event.target.playVideo();
-		}
-
-		function onPlayerStateChange(event) {
-			if (event.data == YT.PlayerState.ENDED) {
-				player.playVideo(); // Reproducir de nuevo cuando termine
+		function toggleMusic() {
+			if (isPlaying) {
+				audio.pause();
+				document.getElementById('music-icon').className = 'icon-play';
+				isPlaying = false;
+			} else {
+				audio.play();
+				document.getElementById('music-icon').className = 'icon-pause';
+				isPlaying = true;
 			}
 		}
 	</script>
