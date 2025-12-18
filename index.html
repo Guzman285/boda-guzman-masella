@@ -215,9 +215,11 @@
         }
 
         .flip-clock-divider .flip-clock-label {
-            position: absolute;
-            top: auto;
-            bottom: -1.5em;
+            display: none !important;
+        }
+
+        .flip-clock-label {
+            display: none !important;
         }
 
         @media (max-width: 768px) {
@@ -238,17 +240,17 @@
 
         @media (max-width: 480px) {
             .flipTimebox {
-                transform: scale(0.32);
+                transform: scale(0.28);
                 transform-origin: center center;
             }
 
             .flip-clock-wrapper ul {
-                width: 38px !important;
-                height: 57px !important;
+                width: 32px !important;
+                height: 48px !important;
             }
 
             .flip-clock-divider {
-                width: 10px !important;
+                width: 8px !important;
             }
         }
 
