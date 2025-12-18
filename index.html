@@ -184,28 +184,37 @@
             margin: 30px auto;
             text-align: center;
             max-width: 100%;
-            overflow-x: auto;
-            overflow-y: visible;
-            padding: 0 10px;
+            overflow: visible;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .flipTimebox .clock {
-            display: inline-block;
-            white-space: nowrap;
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Asegurar que el reloj se mantenga en una línea */
         .flip-clock-wrapper {
             margin: 0 auto;
-            display: inline-block !important;
-            white-space: nowrap !important;
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-clock-wrapper * {
+            float: none !important;
         }
 
         .flip-clock-wrapper ul {
             width: 60px;
             height: 90px;
             display: inline-block !important;
-            float: none !important;
+            margin: 0 2px;
         }
 
         .flip-clock-wrapper ul li {
@@ -214,26 +223,26 @@
 
         .flip-clock-divider {
             display: inline-block !important;
-            float: none !important;
+            margin: 0 2px;
         }
 
         @media (max-width: 768px) {
             .flipTimebox {
-                transform: scale(0.55);
+                transform: scale(0.5);
                 transform-origin: center center;
             }
         }
 
         @media (max-width: 480px) {
             .flipTimebox {
-                transform: scale(0.42);
+                transform: scale(0.38);
                 transform-origin: center center;
             }
         }
 
         @media (max-width: 360px) {
             .flipTimebox {
-                transform: scale(0.38);
+                transform: scale(0.32);
                 transform-origin: center center;
             }
         }
