@@ -293,9 +293,29 @@
             }
 
 
-            /* Eventos - mapas */
+            /* Eventos - mapas y botones en móvil */
             #fh5co-event iframe {
                 height: 250px !important;
+            }
+            #fh5co-event .display-tc {
+                display: block !important;
+                height: auto !important;
+            }
+            #fh5co-event .display-t {
+                display: block !important;
+                height: auto !important;
+            }
+            #fh5co-event .event-wrap {
+                height: auto !important;
+                min-height: auto !important;
+            }
+            #fh5co-event .btn,
+            #fh5co-event button {
+                position: relative !important;
+                z-index: 999 !important;
+                pointer-events: auto !important;
+                cursor: pointer !important;
+                touch-action: manipulation !important;
             }
 
 
