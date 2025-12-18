@@ -289,6 +289,9 @@
             margin: 20px 10px;
             width: 100%;
             overflow: visible;
+            min-height: 750px;
+            display: flex;
+            flex-direction: column;
         }
 
         .titulo-evento {
@@ -334,6 +337,15 @@
 
         .tarjeta-evento p b {
             font-size: 18px;
+        }
+
+        .contenido-evento {
+            flex: 1;
+        }
+
+        .botones-evento {
+            margin-top: auto;
+            padding-top: 20px;
         }
 
         /* ==== BOTONES ==== */
@@ -1076,66 +1088,74 @@
                     <!-- Ceremonia Religiosa -->
                     <div class="col-md-6">
                         <div class="tarjeta-evento">
-                            <h3 class="titulo-evento">Ceremonia Religiosa</h3>
+                            <div class="contenido-evento">
+                                <h3 class="titulo-evento">Ceremonia Religiosa</h3>
 
-                            <div class="info-evento">
-                                <i class="icon-calendar"></i>
-                                <span>24 Enero 2026</span>
+                                <div class="info-evento">
+                                    <i class="icon-calendar"></i>
+                                    <span>24 Enero 2026</span>
+                                </div>
+
+                                <div class="info-evento">
+                                    <i class="icon-clock"></i>
+                                    <span>16:00 horas</span>
+                                </div>
+
+                                <p><b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
+
+                                <div class="mapa-evento">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Ceremonia"></iframe>
+                                </div>
                             </div>
 
-                            <div class="info-evento">
-                                <i class="icon-clock"></i>
-                                <span>16:00 horas</span>
+                            <div class="botones-evento">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="boton boton-contorno">
+                                    <i class="icon-location-pin"></i> ¿Cómo llegar?
+                                </a>
+
+                                <br><br>
+
+                                <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
+                                    <i class="icon-heart"></i> Confirmar Asistencia
+                                </a>
                             </div>
-
-                            <p><b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
-
-                            <div class="mapa-evento">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Ceremonia"></iframe>
-                            </div>
-
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="boton boton-contorno">
-                                <i class="icon-location-pin"></i> ¿Cómo llegar?
-                            </a>
-
-                            <br><br>
-
-                            <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
-                                <i class="icon-heart"></i> Confirmar Asistencia
-                            </a>
                         </div>
                     </div>
 
                     <!-- Recepción -->
                     <div class="col-md-6">
                         <div class="tarjeta-evento">
-                            <h3 class="titulo-evento">Recepción</h3>
+                            <div class="contenido-evento">
+                                <h3 class="titulo-evento">Recepción</h3>
 
-                            <div class="info-evento">
-                                <i class="icon-calendar"></i>
-                                <span>24 Enero 2026</span>
+                                <div class="info-evento">
+                                    <i class="icon-calendar"></i>
+                                    <span>24 Enero 2026</span>
+                                </div>
+
+                                <div class="info-evento">
+                                    <i class="icon-clock"></i>
+                                    <span>18:00 horas</span>
+                                </div>
+
+                                <p><b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
+
+                                <div class="mapa-evento">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Recepción"></iframe>
+                                </div>
                             </div>
 
-                            <div class="info-evento">
-                                <i class="icon-clock"></i>
-                                <span>18:00 horas</span>
+                            <div class="botones-evento">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="boton boton-contorno">
+                                    <i class="icon-location-pin"></i> ¿Cómo llegar?
+                                </a>
+
+                                <br><br>
+
+                                <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
+                                    <i class="icon-heart"></i> Confirmar Asistencia
+                                </a>
                             </div>
-
-                            <p><b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
-
-                            <div class="mapa-evento">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" frameborder="0" allowfullscreen loading="lazy" title="Mapa Recepción"></iframe>
-                            </div>
-
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="boton boton-contorno">
-                                <i class="icon-location-pin"></i> ¿Cómo llegar?
-                            </a>
-
-                            <br><br>
-
-                            <a href="#" onclick="abrirModal(); return false;" class="boton boton-principal">
-                                <i class="icon-heart"></i> Confirmar Asistencia
-                            </a>
                         </div>
                     </div>
                 </div>
