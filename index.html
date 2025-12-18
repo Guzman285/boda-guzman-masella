@@ -178,6 +178,11 @@
             color: #333;
         }
 
+        /* Fix para overlay que bloquea clics en eventos */
+        #fh5co-event .overlay {
+            pointer-events: none !important;
+        }
+
         /* Estilos responsivos para móviles */
         @media screen and (max-width: 768px) {
             /* Fix para eventos en móvil */
