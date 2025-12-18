@@ -127,24 +127,108 @@
             font-size: 50px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
             line-height: 1.6;
-            font-weight: 600;
+            font-weight: 300;
             padding: 0 20px;
             margin: 30px 0;
-            font-family: 'Work Sans', sans-serif;
+            font-family: 'Sacramento', cursive;
             color: white;
+            font-style: italic;
         }
 
         .versiculo-referencia {
-            font-size: 36px;
+            font-size: 32px;
             margin-top: 15px;
             display: block;
-            font-weight: 700;
+            font-weight: 400;
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
         }
 
         /* ==== CONTADOR ==== */
         .flipTimebox {
             margin: 30px auto;
             text-align: center;
+            max-width: 100%;
+            overflow: visible;
+        }
+
+        .flipTimebox .clock {
+            display: inline-block;
+        }
+
+        /* Asegurar que el reloj se mantenga en una línea */
+        .flip-clock-wrapper {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .flip-clock-wrapper ul {
+            width: 60px;
+            height: 90px;
+        }
+
+        .flip-clock-wrapper ul li {
+            line-height: 87px;
+        }
+
+        @media (max-width: 768px) {
+            .flip-clock-wrapper ul {
+                width: 48px;
+                height: 72px;
+            }
+
+            .flip-clock-wrapper ul li {
+                line-height: 70px;
+                font-size: 48px;
+            }
+
+            .flip-clock-divider {
+                width: 20px;
+            }
+
+            .flip-clock-label {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .flip-clock-wrapper ul {
+                width: 40px;
+                height: 60px;
+            }
+
+            .flip-clock-wrapper ul li {
+                line-height: 58px;
+                font-size: 40px;
+            }
+
+            .flip-clock-divider {
+                width: 16px;
+            }
+
+            .flip-clock-label {
+                font-size: 8px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .flip-clock-wrapper ul {
+                width: 32px;
+                height: 48px;
+            }
+
+            .flip-clock-wrapper ul li {
+                line-height: 46px;
+                font-size: 32px;
+            }
+
+            .flip-clock-divider {
+                width: 12px;
+            }
+
+            .flip-clock-label {
+                font-size: 7px;
+            }
         }
 
         /* ==== EVENTOS ==== */
@@ -519,13 +603,13 @@
             }
 
             .versiculo {
-                font-size: 28px;
+                font-size: 32px;
                 padding: 0 15px;
                 line-height: 1.5;
             }
 
             .versiculo-referencia {
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .titulo-seccion {
@@ -634,10 +718,6 @@
                 font-size: 28px;
             }
 
-            .flipTimebox {
-                transform: scale(0.8);
-            }
-
             /* Ajustes de padding para el header */
             #fh5co-header .display-tc {
                 padding-top: 80px;
@@ -654,20 +734,16 @@
         /* Móviles pequeños */
         @media (max-width: 480px) {
             .versiculo {
-                font-size: 22px;
+                font-size: 26px;
                 padding: 0 10px;
             }
 
             .versiculo-referencia {
-                font-size: 18px;
+                font-size: 20px;
             }
 
             .titulo-seccion {
                 font-size: 28px;
-            }
-
-            .flipTimebox {
-                transform: scale(0.65);
             }
 
             .tarjeta-evento {
@@ -773,20 +849,16 @@
         /* Móviles muy pequeños */
         @media (max-width: 360px) {
             .versiculo {
-                font-size: 18px;
+                font-size: 22px;
                 line-height: 1.4;
             }
 
             .versiculo-referencia {
-                font-size: 15px;
+                font-size: 18px;
             }
 
             .titulo-seccion {
                 font-size: 26px;
-            }
-
-            .flipTimebox {
-                transform: scale(0.55);
             }
 
             .tarjeta-evento,
