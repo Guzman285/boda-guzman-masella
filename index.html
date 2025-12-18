@@ -154,29 +154,6 @@
             color: #333;
         }
 
-        /* FIX: Asegurar que botones sean siempre visibles y clickeables */
-        #fh5co-event .btn {
-            position: relative !important;
-            z-index: 100 !important;
-            pointer-events: auto !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-            display: inline-block !important;
-        }
-        
-        #fh5co-event button {
-            position: relative !important;
-            z-index: 100 !important;
-            pointer-events: auto !important;
-            cursor: pointer !important;
-        }
-
-        #fh5co-event a.btn {
-            position: relative !important;
-            z-index: 100 !important;
-            pointer-events: auto !important;
-        }
-
         /* Estilos responsivos para móviles */
         @media screen and (max-width: 768px) {
             /* Modal responsivo */
@@ -449,12 +426,12 @@
                                     <p>Lugar: <b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
                                     <div style="position: relative; width: 100%; max-width: 400px; margin: 15px auto;">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" width="100%" height="200" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Ceremonia Civil"></iframe>
-                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px; background: white; border: 2px solid #2C5F8D; color: #2C5F8D; padding: 8px 20px; font-size: 13px; border-radius: 20px; display: inline-block; text-decoration: none;">
+                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.6378125,-90.5069204" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px !important; background: white !important; border: 2px solid #2C5F8D !important; color: #2C5F8D !important; padding: 8px 20px !important; font-size: 13px !important; border-radius: 20px !important; display: inline-block !important; text-decoration: none !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; visibility: visible !important; opacity: 1 !important;">
                                             <i class="icon-location-pin" style="margin-right: 5px;"></i>¿Cómo llegar?
                                         </a>
                                     </div>
-                                    <p style="margin-top: 20px;">
-                                        <button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border: none; padding: 10px 25px; font-size: 14px; border-radius: 25px; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3);">
+                                    <p style="margin-top: 20px !important; position: relative !important; z-index: 9999 !important;">
+                                        <button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%) !important; border: none !important; padding: 10px 25px !important; font-size: 14px !important; border-radius: 25px !important; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3) !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; cursor: pointer !important; display: inline-block !important; visibility: visible !important; opacity: 1 !important;">
                                             <i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
                                         </button>
                                     </p>
@@ -476,12 +453,12 @@
                                     <p>Lugar: <b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
                                     <div style="position: relative; width: 100%; max-width: 400px; margin: 15px auto;">
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" width="100%" height="200" frameborder="0" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Recepción"></iframe>
-                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px; background: white; border: 2px solid #2C5F8D; color: #2C5F8D; padding: 8px 20px; font-size: 13px; border-radius: 20px; display: inline-block; text-decoration: none;">
+                                        <a href="https://www.google.com/maps/dir/?api=1&destination=14.64308,-90.5077864" target="_blank" class="btn btn-default btn-sm" style="margin-top: 10px !important; background: white !important; border: 2px solid #2C5F8D !important; color: #2C5F8D !important; padding: 8px 20px !important; font-size: 13px !important; border-radius: 20px !important; display: inline-block !important; text-decoration: none !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; visibility: visible !important; opacity: 1 !important;">
                                             <i class="icon-location-pin" style="margin-right: 5px;"></i>¿Cómo llegar?
                                         </a>
                                     </div>
-                                    <p style="margin-top: 20px;">
-                                        <button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%); border: none; padding: 10px 25px; font-size: 14px; border-radius: 25px; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3);">
+                                    <p style="margin-top: 20px !important; position: relative !important; z-index: 9999 !important;">
+                                        <button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #4A90C8 0%, #2C5F8D 100%) !important; border: none !important; padding: 10px 25px !important; font-size: 14px !important; border-radius: 25px !important; box-shadow: 0 4px 15px rgba(44, 95, 141, 0.3) !important; position: relative !important; z-index: 9999 !important; pointer-events: auto !important; cursor: pointer !important; display: inline-block !important; visibility: visible !important; opacity: 1 !important;">
                                             <i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
                                         </button>
                                     </p>
