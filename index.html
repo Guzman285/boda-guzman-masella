@@ -6,17 +6,17 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Shyam ❤️ Rincy - 29.10.2023</title>
+	<title>Guzman ❤️ Masella 24.01.26</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="We are getting hitched - The dates are 21st & 29th of October '23 and we would like you to be a part of it." />
-	<meta name="keywords" content="shyam,rincy,wedding,website,rsvp" />
-	<meta name="author" content="Shyam & Rincy" />
+	<meta name="description" content="Nos casamos y queremos que seas parte de este día especial." />
+	<meta name="keywords" content="guzman,masella,boda,wedding,website,rsvp" />
+	<meta name="author" content="Guzman & Masella" />
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:image" content="images/og.jpg"/>
-	<meta property="og:site_name" content="Shyam ❤️ Rincy - 29.10.2023">
-    <meta property="og:title" content="Shyam ❤️ Rincy - 29.10.2023">
-    <meta property="og:description" content="We are getting hitched - The dates are 21st & 29th of October '23 and we would like you to be a part of it.">
+	<meta property="og:site_name" content="Guzman ❤️ Masella">
+    <meta property="og:title" content="Guzman ❤️ Masella">
+    <meta property="og:description" content="Nos casamos y queremos que seas parte de este día especial.">
 	<!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -50,6 +50,105 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Estilos personalizados para mejorar el reloj -->
+	<style>
+		.flipTimebox {
+			margin: 30px auto !important;
+			text-align: center;
+		}
+		.flip-clock-wrapper {
+			text-align: center;
+			display: inline-block;
+		}
+		.flip-clock-wrapper * {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		/* Modal de confirmación */
+		.modal-overlay {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 9999;
+			justify-content: center;
+			align-items: center;
+		}
+		.modal-content {
+			background: white;
+			padding: 40px;
+			border-radius: 20px;
+			text-align: center;
+			max-width: 500px;
+			width: 90%;
+			box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+			animation: slideIn 0.3s ease-out;
+		}
+		@keyframes slideIn {
+			from {
+				transform: translateY(-50px);
+				opacity: 0;
+			}
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		.modal-content h3 {
+			color: #F67280;
+			margin-bottom: 30px;
+			font-family: 'Sacramento', cursive;
+			font-size: 32px;
+		}
+		.modal-buttons {
+			display: flex;
+			gap: 15px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.modal-btn {
+			padding: 15px 30px;
+			border: none;
+			border-radius: 25px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		}
+		.modal-btn-novia {
+			background: linear-gradient(135deg, #F8B195 0%, #F67280 100%);
+			color: white;
+		}
+		.modal-btn-novio {
+			background: linear-gradient(135deg, #C06C84 0%, #6C5B7B 100%);
+			color: white;
+		}
+		.modal-btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+		}
+		.modal-close {
+			position: absolute;
+			top: 15px;
+			right: 20px;
+			font-size: 28px;
+			color: #999;
+			cursor: pointer;
+			background: none;
+			border: none;
+		}
+		.modal-close:hover {
+			color: #333;
+		}
+	</style>
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -69,10 +168,10 @@
 	
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li class="active"><a href="#fh5co-event">Events</a></li>
-						<li class="active"><a href="#fh5co-gallery">Gallery</a></li>
-						<li class="active"><a href="#fh5co-services">Highlights</a></li>
+						<li class="active"><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="#fh5co-event">Eventos</a></li>
+						<li class="active"><a href="#fh5co-gallery">Galería</a></li>
+						<li class="active"><a href="#fh5co-services">Destacados</a></li>
 					</ul>
 				</div>
 			</div>
@@ -87,15 +186,15 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Shyam &amp; Rincy</h1>
+							<h1>Guzman &amp; Masella</h1>
 							<br>
-							<img src="images/fprint.png" alt="Shyam + Rincy"> 
-							<h2>29.10.2023</h2>
-							<h2>"I have found the one whom my soul loves." <br>Song of Solomon 3:4</h2>
+							<img src="images/fprint.png" alt="Guzman + Masella"> 
+							<h2>24.01.26</h2>
+							<h2 style="font-size: 26px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7), -1px -1px 2px rgba(255,255,255,0.3); line-height: 1.6; font-weight: 500;">"Por eso dejará el hombre a su padre y a su madre, y se unirá a su mujer, y los dos llegarán a ser un solo cuerpo. Así que ya no son dos, sino uno solo." <br><span style="font-size: 20px;">Mateo 19:5-6</span></h2>
 							<div class="flipTimebox">
 								<div class="clock clock-fix"></div>
 							  </div>
-							<p><a href="#fh5co-event" class="btn btn-default btn-sm">Save our date</a></p>
+							<p><a href="#fh5co-event" class="btn btn-default btn-sm">Reserva la fecha</a></p>
 						</div>
 					</div>
 				</div>
@@ -110,7 +209,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Events</h2>
+					<h2>Eventos</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -119,34 +218,44 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Betrothal</h3>
+									<h3>Ceremonia Civil</h3>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>21 October 2023</span>
+										<span>24 Enero 2026</span>
 									</div>
 									<div class="event-col">
 
 										<i class="icon-clock"></i>
-										<span>11:30 AM</span>
+										<span>16:00 horas</span>
 									</div>
-									<p>At <b>St. Vincent De Paul Church Edathotty, Kannur.</b> Followed by lunch at <b>Robin's Wedding Cafe, Edathotty.</b></p>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.673315773661!2d75.71257847590881!3d11.927808088299846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5cd2b69442ebf%3A0x41b4e77a403a15b4!2sDe%20Paul%20Church%2C%20Edathotty!5e0!3m2!1sen!2sin!4v1696094112600!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									<p>Lugar: <b>Basílica de Nuestra Señora del Rosario</b><br>Zona 1, Ciudad Capital</p>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.3192148241415!2d-90.50692049999999!3d14.6378125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a214d5418f95%3A0x8753d0dd44557e9b!2sOficina%20Iglesia%20Santo%20Domingo!5e0!3m2!1ses!2sgt!4v1765998176791!5m2!1ses!2sgt" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Ceremonia Civil"></iframe>
+									<p style="margin-top: 20px;">
+										<button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #F8B195 0%, #F67280 100%); border: none; padding: 10px 25px; font-size: 14px; border-radius: 25px; box-shadow: 0 4px 15px rgba(246, 114, 128, 0.3);">
+											<i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
+										</button>
+									</p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap animate-box">
-									<h3>Wedding</h3>
+									<h3>Recepción</h3>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>29 October 2023</span>
+										<span>24 Enero 2026</span>
 									</div>
 									<div class="event-col">
 
 										<i class="icon-clock"></i>
-										<span>12:00 PM</span>
+										<span>18:00 horas</span>
 									</div>
-									<p>At <b>St. Antony's Church Cheriyappilly, North Paravur.</b> Followed by lunch at <b>IMA Hall, North Paravur</b></p>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.690238117892!2d76.24293817588756!3d10.124421489987455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0810402ea732f5%3A0x7e23209bf83c2a9b!2sSt.Antony&#39;s%20Roman%20Catholic%20Church!5e0!3m2!1sen!2sin!4v1696094216568!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									<p>Lugar: <b>Museo Convento de la Merced</b><br>Zona 1, Ciudad Capital</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.2265040183256!2d-90.5077864!3d14.64308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3aed1a1b287%3A0x2952da1c0e268971!2sMuseo%20de%20La%20Merced!5e0!3m2!1ses!2sgt!4v1765998112226!5m2!1ses!2sgt" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Recepción"></iframe>
+									<p style="margin-top: 20px;">
+										<button onclick="confirmarAsistencia()" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #F8B195 0%, #F67280 100%); border: none; padding: 10px 25px; font-size: 14px; border-radius: 25px; box-shadow: 0 4px 15px rgba(246, 114, 128, 0.3);">
+											<i class="icon-heart" style="margin-right: 8px;"></i>Confirmar Asistencia
+										</button>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -161,7 +270,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Gallery</h2>
+					<h2>Galería</h2>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -175,14 +284,14 @@
 						</a>
 					</li>
 
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS2.jpg); "> 
-						<a href="images/RS2.jpg">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS2.jpeg); background-position: center top;">
+						<a href="images/RS2.jpeg">
 							<div class="case-studies-summary">
 							</div>
 						</a>
 					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS3.jpg); "> 
-						<a href="images/RS3.jpg">
+					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/RS3.jpeg); ">
+						<a href="images/RS3.jpeg">
 							<div class="case-studies-summary">
 							</div>
 						</a>
@@ -194,6 +303,71 @@
 		</div>
 	</div>
 
+	<!-- Código de Vestimenta -->
+	<div id="fh5co-dresscode" class="fh5co-bg" style="background-color: #f9f9f9;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2 style="color: #F67280;">Código de Vestimenta</h2>
+					<p style="font-size: 18px; margin-bottom: 40px;">Etiqueta Formal</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 text-center animate-box">
+					<div style="padding: 30px;">
+						<i class="icon-heart" style="font-size: 50px; color: #F8B195; margin-bottom: 20px;"></i>
+						<h3 style="color: #C06C84; font-size: 24px; margin-bottom: 15px;">Damas</h3>
+						<p style="font-size: 18px; color: #666;">Vestido largo</p>
+						<p style="font-size: 14px; color: #999; font-style: italic;">(Por favor, evitar el color blanco)</p>
+					</div>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<div style="padding: 30px;">
+						<i class="icon-heart" style="font-size: 50px; color: #6C5B7B; margin-bottom: 20px;"></i>
+						<h3 style="color: #C06C84; font-size: 24px; margin-bottom: 15px;">Caballeros</h3>
+						<p style="font-size: 18px; color: #666;">Traje Formal</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Regalos -->
+	<div id="fh5co-gifts" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2 style="color: #F67280;">Mesa de Regalos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 text-center animate-box">
+					<div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;">
+						<div>
+							<i class="icon-present" style="font-size: 60px; color: #F8B195; margin-bottom: 20px; display: block;"></i>
+							<h3 style="color: #C06C84; font-size: 22px; margin-bottom: 20px;">Lista Cemaco</h3>
+							<p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 25px;">Hemos creado una lista de regalos con artículos que nos ayudarán a construir nuestro hogar juntos.</p>
+						</div>
+						<a href="https://www.cemaco.com/list/BODAGUZMANMASELLA24012026" target="_blank" class="btn btn-primary" style="background: linear-gradient(135deg, #F8B195 0%, #F67280 100%); border: none; padding: 12px 30px; border-radius: 25px; color: white; text-decoration: none; display: inline-block;">
+							Ver Lista
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 text-center animate-box">
+					<div style="padding: 40px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin: 10px; min-height: 380px; display: flex; flex-direction: column; justify-content: space-between;">
+						<div>
+							<i class="icon-wallet" style="font-size: 60px; color: #C06C84; margin-bottom: 20px; display: block;"></i>
+							<h3 style="color: #C06C84; font-size: 22px; margin-bottom: 20px;">Lluvia de Sobres</h3>
+							<p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 25px;">Si prefieres obsequiarnos algo especial, una contribución monetaria nos ayudará a comenzar nuestra nueva vida juntos.</p>
+						</div>
+						<div style="padding: 12px 30px; opacity: 0;">
+							<!-- Spacer para mantener altura igual -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<div id="fh5co-services" class="fh5co-section-gray">
@@ -201,7 +375,7 @@
 			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Highlights</h2>
+					<h2>Destacados</h2>
 
 				</div>
 			</div>
@@ -218,6 +392,24 @@
 			
 		</div>
 	</div>
+	<!-- Modal de Confirmación de Asistencia -->
+	<div id="modalAsistencia" class="modal-overlay">
+		<div class="modal-content" style="position: relative;">
+			<button class="modal-close" onclick="cerrarModal()">&times;</button>
+			<h3>¿Eres invitado de...?</h3>
+			<p style="color: #F67280; font-size: 16px; margin-bottom: 10px; font-weight: 500;">Por favor confirma antes del 5 de enero de 2026</p>
+			<p style="color: #666; font-size: 14px; margin-bottom: 25px; font-style: italic;">Para disfrutar plenamente de nuestra celebración, hemos decidido que sea un evento solo para adultos. Agradecemos tu comprensión.</p>
+			<div class="modal-buttons">
+				<button class="modal-btn modal-btn-novia" onclick="confirmarNovia()">
+					<i class="icon-heart" style="margin-right: 8px;"></i>La Novia (Masella)
+				</button>
+				<button class="modal-btn modal-btn-novio" onclick="confirmarNovio()">
+					<i class="icon-heart" style="margin-right: 8px;"></i>El Novio (Guzman)
+				</button>
+			</div>
+		</div>
+	</div>
+
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -249,6 +441,48 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<center>View Source Code on <a href="https://github.com/shyamjos/wedding-website">GitHub <img src="images/github-logo.png"> </a> </center>
+	<!-- Traducir etiquetas del reloj al español -->
+	<script>
+		$(document).ready(function() {
+			setTimeout(function() {
+				$('.flip-clock-label').each(function() {
+					var text = $(this).text().toLowerCase();
+					if (text === 'days') $(this).text('Días');
+					if (text === 'hours') $(this).text('Horas');
+					if (text === 'minutes') $(this).text('Minutos');
+					if (text === 'seconds') $(this).text('Segundos');
+				});
+			}, 100);
+		});
+
+		// Funciones del modal de confirmación
+		function confirmarAsistencia() {
+			document.getElementById('modalAsistencia').style.display = 'flex';
+		}
+
+		function cerrarModal() {
+			document.getElementById('modalAsistencia').style.display = 'none';
+		}
+
+		function confirmarNovia() {
+			// Número de WhatsApp para invitados de la novia (Masella)
+			window.open('https://wa.me/50247700182?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
+			cerrarModal();
+		}
+
+		function confirmarNovio() {
+			// Número de WhatsApp para invitados del novio (Guzman)
+			window.open('https://wa.me/50242154639?text=Si%20con%20mucho%20gusto.%20podre%20acompa%C3%B1arlos', '_blank');
+			cerrarModal();
+		}
+
+		// Cerrar modal al hacer clic fuera de él
+		document.addEventListener('click', function(event) {
+			var modal = document.getElementById('modalAsistencia');
+			if (event.target === modal) {
+				cerrarModal();
+			}
+		});
+	</script>
 	</body>
 </html>
