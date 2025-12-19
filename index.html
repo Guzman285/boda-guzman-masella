@@ -237,8 +237,8 @@
                 overflow-x: visible;
                 overflow-y: hidden;
                 max-width: 100%;
-                padding: 6px 5px;
-                margin: 15px auto;
+                padding: 5px;
+                margin: 12px auto;
             }
 
             .flip-clock-wrapper {
@@ -246,53 +246,17 @@
                 flex-wrap: nowrap !important;
             }
 
-            .flip-clock-wrapper ul {
-                width: 22px !important;
-                height: 34px !important;
-                margin: 0 0.8px !important;
-            }
-
-            .flip-clock-wrapper ul li {
-                line-height: 32px !important;
-                font-size: 22px !important;
-            }
-
-            .flip-clock-divider {
-                width: 8px !important;
-                margin: 0 0.8px !important;
-            }
-
-            .flip-clock-divider .flip-clock-label {
-                right: -26px !important;
-            }
-
-            .flip-clock-divider .flip-clock-dot {
-                width: 3.5px !important;
-                height: 3.5px !important;
-            }
-
-            .flip-clock-label {
-                font-size: 5.5px !important;
-            }
-        }
-
-        /* Móviles pequeños */
-        @media (max-width: 480px) {
-            .flipTimebox {
-                overflow-x: visible;
-                padding: 5px;
-                margin: 12px auto;
-            }
-
+            /* Cajas más pequeñas */
             .flip-clock-wrapper ul {
                 width: 20px !important;
                 height: 32px !important;
                 margin: 0 0.7px !important;
             }
 
+            /* Números más pequeños dentro de las cajas */
             .flip-clock-wrapper ul li {
                 line-height: 30px !important;
-                font-size: 20px !important;
+                font-size: 18px !important;
             }
 
             .flip-clock-divider {
@@ -314,28 +278,30 @@
             }
         }
 
-        /* Móviles muy pequeños */
-        @media (max-width: 360px) {
+        /* Móviles pequeños */
+        @media (max-width: 480px) {
             .flipTimebox {
                 overflow-x: visible;
                 padding: 4px;
                 margin: 10px auto;
             }
 
+            /* Cajas aún más pequeñas */
             .flip-clock-wrapper ul {
                 width: 18px !important;
                 height: 28px !important;
-                margin: 0 0.5px !important;
+                margin: 0 0.6px !important;
             }
 
+            /* Números reducidos */
             .flip-clock-wrapper ul li {
                 line-height: 26px !important;
-                font-size: 18px !important;
+                font-size: 15px !important;
             }
 
             .flip-clock-divider {
                 width: 6px !important;
-                margin: 0 0.5px !important;
+                margin: 0 0.6px !important;
             }
 
             .flip-clock-divider .flip-clock-label {
@@ -349,6 +315,46 @@
 
             .flip-clock-label {
                 font-size: 4.5px !important;
+            }
+        }
+
+        /* Móviles muy pequeños */
+        @media (max-width: 360px) {
+            .flipTimebox {
+                overflow-x: visible;
+                padding: 3px;
+                margin: 8px auto;
+            }
+
+            /* Lo más pequeño posible pero legible */
+            .flip-clock-wrapper ul {
+                width: 16px !important;
+                height: 26px !important;
+                margin: 0 0.5px !important;
+            }
+
+            /* Números muy reducidos */
+            .flip-clock-wrapper ul li {
+                line-height: 24px !important;
+                font-size: 13px !important;
+            }
+
+            .flip-clock-divider {
+                width: 5px !important;
+                margin: 0 0.5px !important;
+            }
+
+            .flip-clock-divider .flip-clock-label {
+                right: -18px !important;
+            }
+
+            .flip-clock-divider .flip-clock-dot {
+                width: 2px !important;
+                height: 2px !important;
+            }
+
+            .flip-clock-label {
+                font-size: 4px !important;
             }
         }
 
